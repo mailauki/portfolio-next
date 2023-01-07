@@ -15,12 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>
+        <div className={styles.section}>
           <h3>Hi, I'm Julie M. Evans</h3>
           <p>Web Developer / Software Engineer / Full-Stack Engineer</p>
           <button>Contact Me</button>
         </div>
-        <div>
+
+        <div className={styles.section}>
           <h4>About Me</h4>
           <p>about me</p>
           <ul>
@@ -36,21 +37,24 @@ export default function Home() {
           </ul>
           <p>goals...</p>
         </div>
-        <div>
+
+        <div className={styles.section}>
           <h4>Projects</h4>
-          <div>
+          <div className={styles.card}>
             <h6>project title</h6>
             <p>project description</p>
           </div>
         </div>
-        <div>
+
+        <div className={styles.section}>
           <h4>Blogs</h4>
-          <div>
+          <div className={styles.card}>
             <h6>blog title</h6>
             <p>blog description</p>
           </div>
         </div>
-        <div>
+
+        <div className={styles.section}>
           <h4>Contact Me</h4>
           <p>reach out message</p>
           <div>
