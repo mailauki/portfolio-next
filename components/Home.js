@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import projects from '../json/data'
 import Projects from '../components/Projects'
+import Blogs from './Blogs'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +17,7 @@ export default function Home() {
 
       <div className={styles.section}>
         <h1>About Me</h1>
+        
         <p>about me</p>
         <ul>
           <li>HTML</li>
@@ -32,49 +33,13 @@ export default function Home() {
         <p>goals...</p>
       </div>
 
-      {/* <div className={styles.section}>
-        <h1>Projects</h1>
-
-        <div className={styles.grid}>
-          {projects.map((data) => (
-            <a
-              href="#"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-                {data.title} <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-                {data.description[0]}
-              </p>
-            </a>
-          ))}
-        </div>
-      </div> */}
-
       <Projects />
 
-      <div className={styles.section}>
-        <h1>Blogs</h1>
-        <a
-          href="#"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Blog Title <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Blog Info
-          </p>
-        </a>
-      </div>
+      <Blogs />
 
       <div className={styles.section}>
         <h1>Contact Me</h1>
+
         <p>reach out message</p>
         <div>
           <button>LinkedIn</button>

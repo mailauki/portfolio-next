@@ -1,26 +1,18 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import projects from '../json/projects'
-// import useSWR from 'swr'
+import blogs from '../json/blogs'
+import { Typography } from '@mui/material'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// const fetcher = (url) => fetch(url).then((res) => res.json())
-
-export default function Projects() {
-  // const { data, error } = useSWR('/api/staticdata', fetcher)
-
-  // if (error) return <div>Failed to load</div>
-
-  // if (!data) return <div>Loading...</div>
-
+export default function Blogs() {
   return (
     <div className={styles.section}>
-      <h1>Projects</h1>
+      <h1>Blogs</h1>
 
       <div className={styles.grid}>
-        {projects.map((data) => (
+        {blogs.map((data) => (
           <a
             key={data.id}
             href={`/api/projects/${data.id}`}
