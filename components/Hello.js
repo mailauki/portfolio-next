@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Contact from './Contact'
-import { Fab } from '@mui/material'
+import { Button } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail'
 
 export default function Hello() {
@@ -19,10 +19,14 @@ export default function Hello() {
         >
           <h1>Hi, I'm Julie M. Evans</h1>
           <p>Web Developer / Software Engineer / Full-Stack Engineer</p>
-          <Fab variant="extended" color="primary">
-            <MailIcon sx={{ mr: 1 }} />
+          <Button 
+            variant="contained" 
+            startIcon={<MailIcon />} 
+            size="large" 
+            sx={{ borderRadius: 50, padding: "12px 16px" }}
+          >
             Contact Me
-          </Fab>
+          </Button>
         </div>
       </div>
     </div>
