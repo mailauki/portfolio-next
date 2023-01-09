@@ -10,23 +10,25 @@ export default function Hello() {
       <Contact />
 
       <div className={styles.content}>
-        <div 
-          style={{ 
-            display: "flex", 
-            flexDirection: "column", 
-            alignItems: "center" 
-          }}
-        >
-          <h1>Hi, I'm Julie M. Evans</h1>
-          <p>Web Developer / Software Engineer / Full-Stack Engineer</p>
-          <Button 
-            variant="contained" 
-            startIcon={<MailIcon />} 
-            size="large" 
-            sx={{ borderRadius: 50, padding: "12px 16px" }}
-          >
-            Contact Me
-          </Button>
+        <div className={styles.center}>
+          {/* <div 
+            style={{ 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center" 
+            }}
+          > */}
+            <h1>Hi, I'm Julie M. Evans</h1>
+            <p>Web Developer / Software Engineer / Full-Stack Engineer</p>
+            <Button 
+              variant="contained" 
+              startIcon={<MailIcon />} 
+              size="large" 
+              sx={{ borderRadius: 50, padding: "12px 16px" }}
+            >
+              Contact Me
+            </Button>
+          {/* </div> */}
         </div>
       </div>
     </div>
