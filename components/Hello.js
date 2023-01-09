@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Contact from './Contact'
 import { Button } from '@mui/material'
