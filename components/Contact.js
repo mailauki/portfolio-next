@@ -6,20 +6,23 @@ import MailIcon from '@mui/icons-material/Mail'
 
 export default function Contact() {
   return (
-    <div className={styles.section}>
-      <h1>Contact Me</h1>
+    <div className={styles.description}>
+      {/* <p>Hi</p> */}
 
-      <p>reach out message</p>
-      <div>
-        <IconButton color="primary">
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton color="primary">
-          <GitHubIcon />
-        </IconButton>
-        <IconButton color="primary">
-          <MailIcon />
-        </IconButton>
+      <div className={styles.footer}>
+        <div className={styles.contact}>
+          By Julie Evans{' '}
+
+          <IconButton color="primary">
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton color="primary">
+            <GitHubIcon />
+          </IconButton>
+          <IconButton color="primary">
+            <MailIcon />
+          </IconButton>
+        </div>
       </div>
     </div>
   )
