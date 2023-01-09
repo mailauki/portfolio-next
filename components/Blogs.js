@@ -12,25 +12,23 @@ export default function Blogs() {
     <div className={styles.section}>
       <h1>Blogs</h1>
 
-      {/* <div className={styles.content}> */}
-        <div className={styles.grid}>
-          {blogs.map((data) => (
-            <a
-              key={data.id}
-              href={`/api/projects/${data.id}`}
-              className={styles.card}
-              rel="noopener noreferrer"
-            >
-              <h3 className={inter.className}>
-                {data.title} <span><ArrowForwardIcon /></span>
-              </h3>
-              <p className={inter.className}>
-                {data.description[0]}
-              </p>
-            </a>
-          ))}
-        </div>
-      {/* </div> */}
+      <div className={styles.grid}>
+        {blogs.map((data) => (
+          <a
+            key={data.id}
+            href={`/api/projects/${data.id}`}
+            className={styles.card}
+            rel="noopener noreferrer"
+          >
+            <h3 className={inter.className}>
+              {data.title} <span><ArrowForwardIcon /></span>
+            </h3>
+            <p className={inter.className}>
+              {data.description[0]}
+            </p>
+          </a>
+        ))}
+      </div>
     </div>
   )
 }
