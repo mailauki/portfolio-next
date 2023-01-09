@@ -7,7 +7,7 @@ import MailIcon from '@mui/icons-material/Mail'
 export default function Contact() {
   return (
     <div className={styles.description}>
-      {/* <p>Hi</p> */}
+      <p>Hi</p>
 
       <div className={styles.footer}>
         <div className={styles.contact}>

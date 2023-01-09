@@ -9,7 +9,7 @@ export default function Hello() {
     <div className={styles.section}>
       <Contact />
 
-      <div className={styles.content}>
+      {/* <div className={styles.content}> */}
         <div className={styles.center}>
           {/* <div 
             style={{ 
@@ -30,7 +30,7 @@ export default function Hello() {
             </Button>
           {/* </div> */}
         </div>
-      </div>
+      {/* </div> */}
     </div>
   )
 }

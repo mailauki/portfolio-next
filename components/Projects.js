@@ -20,7 +20,7 @@ export default function Projects() {
     <div className={styles.section}>
       <h1>Projects</h1>
 
-      <div className={styles.content}>
+      {/* <div className={styles.content}> */}
         <div className={styles.grid}>
           {projects.map((data) => (
             <a
@@ -38,7 +38,7 @@ export default function Projects() {
             </a>
           ))}
         </div>
-      </div>
+      {/* </div> */}
     </div>
   )
 }

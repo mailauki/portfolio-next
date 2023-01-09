@@ -4,22 +4,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem;
+  gap: 20vh;
   /* min-height: 100vh; */
-  width: 100vw;
+  /* width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity; */
 }
 
 .section {
   width: 100%;
   max-width: 800px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* min-height: 100vh; */
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
-  scroll-snap-align: center;
+  align-items: center; */
+  /* scroll-snap-align: center; */
+  display: inherit;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: inherit;
+  /* border: solid 1px red; */
 }
 
 .section h1 {
@@ -30,19 +35,22 @@
   margin: 0.5rem;
 }
 
-.content {
+/* .content {
   width:100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-}
+} */
 
 .description {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* justify-content: flex-end; */
   display: inherit;
-  /* justify-content: inherit; */
-  justify-content: flex-end;
+  justify-content: inherit;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
@@ -119,51 +127,13 @@
   max-width: 30ch;
 }
 
-.background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* position: relative; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.background::before {
-  background: radial-gradient(--secondary-glow);
-  width: 300px;
-  height: 300px;
-  top: 55%;
-  left: 10%;
-}
-
-.background::after {
-  background: radial-gradient(--primary-glow);
-  width: 600px;
-  height: 600px;
-  z-index: -1;
-  top: 5%;
-  left: 15%;
-}
-
-.background::before,
-.background::after {
-  content: '';
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 
 .center::before {
@@ -229,10 +199,6 @@
     margin-bottom: 0.5rem;
   }
 
-  .background {
-    padding: 8rem 0 6rem;
-  }
-
   .center {
     padding: 8rem 0 6rem;
   }
@@ -246,9 +212,9 @@
     font-size: 0.8rem;
   }
 
-  .description .footer {
+  /* .description .footer {
     padding: 1rem;
-  }
+  } */
 
   .description p,
   .description .footer {

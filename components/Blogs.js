@@ -12,7 +12,7 @@ export default function Blogs() {
     <div className={styles.section}>
       <h1>Blogs</h1>
 
-      <div className={styles.content}>
+      {/* <div className={styles.content}> */}
         <div className={styles.grid}>
           {blogs.map((data) => (
             <a
@@ -30,7 +30,7 @@ export default function Blogs() {
             </a>
           ))}
         </div>
-      </div>
+      {/* </div> */}
     </div>
   )
 }
