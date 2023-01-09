@@ -60,7 +60,7 @@ export const skills = [
   { 
     id: "typescript",
     primary: "TypeScript",
-    secondary: "learning",
+    secondary: "Learning",
     icon: <TypeScriptIcon />
   }
 ]

@@ -20,9 +20,9 @@
   margin: 1rem;
 }
 
-.section button, .section p {
+/* .section button, .section p {
   margin: 0.5rem;
-}
+} */
 
 .description {
   display: inherit;
