@@ -20,7 +20,12 @@ export default function Contact() {
             key={info.id} 
             disablePadding 
           >
-            <ListItemButton>
+            <ListItemButton 
+              component="a" 
+              href={info.link} 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ListItemIcon>
                 {info.icon}
               </ListItemIcon>
