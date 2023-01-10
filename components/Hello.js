@@ -1,11 +1,11 @@
 import styles from '../styles/Home.module.css'
-import Contact from './Contact'
 import { Button, IconButton } from '@mui/material'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import MailIcon from '@mui/icons-material/Mail'
+import { contactInfo } from '../data/contactInfo'
 
 export default function Hello() {
+  const shortContactInfo = contactInfo.filter(info => ["email", "linkedin", "github"].includes(info.id))
+
   return (
     <div className={styles.section}>
       <div className={styles.description}>
@@ -15,15 +15,17 @@ export default function Hello() {
           <div className={styles.contact}>
             By Julie Evans{' '}
 
-            <IconButton color="primary">
-              <LinkedInIcon />
-            </IconButton>
-            <IconButton color="primary">
-              <GitHubIcon />
-            </IconButton>
-            <IconButton color="primary">
-              <MailIcon />
-            </IconButton>
+            {shortContactInfo.map((info) => (
+              <IconButton 
+                color="primary"
+                component="a" 
+                href={info.link} 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {info.icon}
+              </IconButton>
+            ))}
           </div>
         </div>
       </div>
@@ -36,6 +38,10 @@ export default function Hello() {
           startIcon={<MailIcon />} 
           size="large" 
           sx={{ borderRadius: 50, padding: "12px 16px" }}
+          component="a" 
+          href="mailto:juliemevans17@gmail.com" 
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Contact Me
         </Button>
