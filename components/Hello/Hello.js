@@ -1,34 +1,13 @@
 import styles from '../../styles/Home.module.css'
-import { Button, IconButton } from '@mui/material'
+import { Button } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail'
-import { contactInfo } from '../../data/contactInfo'
+import Footer from '../Footer'
 
 export default function Hello() {
-  const shortContactInfo = contactInfo.filter(info => ["email", "linkedin", "github"].includes(info.id))
 
   return (
     <div className={styles.section}>
-      <div className={styles.description}>
-        <p>Hi</p>
-
-        <div className={styles.footer}>
-          <div className={styles.contact}>
-            By Julie Evans{' '}
-
-            {shortContactInfo.map((info) => (
-              <IconButton 
-                color="primary"
-                component="a" 
-                href={info.link} 
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {info.icon}
-              </IconButton>
-            ))}
-          </div>
-        </div>
-      </div>
+      <Footer />
 
       <div className={styles.center}>
         <h1>Hi, I'm Julie M. Evans</h1>

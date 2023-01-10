@@ -12,7 +12,7 @@ export default function Skills() {
       <List 
         className={styles.grid}
         sx={{
-          bgcolor: "background.paper",
+          bgcolor: "background.paper", 
           borderRadius: "20px"
         }}
       >
