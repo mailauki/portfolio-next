@@ -8,8 +8,8 @@
 }
 
 .section {
-  width: 100%;
-  max-width: 800px;
+  width: var(--max-width);
+  max-width: 100%;
   display: inherit;
   flex-direction: column;
   justify-content: inherit;
@@ -53,6 +53,13 @@
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: var(--max-width);
+  max-width: 100%;
 }
 
 .grid {

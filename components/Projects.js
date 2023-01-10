@@ -1,6 +1,6 @@
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import projects from '../json/projects'
+import projects from '../data/projects'
 // import useSWR from 'swr'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 

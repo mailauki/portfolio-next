@@ -3,7 +3,7 @@ import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider, Typograp
 import HtmlIcon from '@mui/icons-material/Html'
 import CssIcon from '@mui/icons-material/Css'
 import StarIcon from '@mui/icons-material/Star'
-import { skills } from '../json/skills'
+import { skills } from '../data/skills'
 
 export default function AboutMe() {
   return (
@@ -32,6 +32,7 @@ export default function AboutMe() {
         </Typography>
       </Box>
 
+      <h2>Skills</h2>
       <List 
         className={styles.grid}
         sx={{ 
