@@ -1,13 +1,11 @@
 import styles from '../../styles/Home.module.css'
 import { Button } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail'
-import Footer from '../Footer'
 
 export default function Hello() {
 
   return (
     <div className={styles.section}>
-      <Footer />
 
       <div className={styles.center}>
         <h1>Hi, I'm Julie M. Evans</h1>
