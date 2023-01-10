@@ -5,7 +5,7 @@ import Skills from './Skills'
 
 export default function AboutMe() {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="aboutme">
       <h1>About Me</h1>
 
       <Box>

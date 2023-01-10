@@ -3,10 +3,8 @@ import { Button } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail'
 
 export default function Hello() {
-
   return (
-    <div className={styles.section}>
-
+    <div className={styles.section} id="hello">
       <div className={styles.center}>
         <h1>Hi, I'm Julie M. Evans</h1>
         <p>Web Developer / Software Engineer / Full-Stack Engineer</p>

@@ -16,7 +16,7 @@ export default function Projects() {
   // if (!data) return <div>Loading...</div>
 
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="projects">
       <h1>Projects</h1>
 
       <div className={styles.grid}>

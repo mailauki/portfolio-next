@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Blogs() {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="blogs">
       <h1>Blogs</h1>
 
       <div className={styles.grid}>
