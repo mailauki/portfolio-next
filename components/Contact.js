@@ -1,8 +1,5 @@
 import styles from '../styles/Home.module.css'
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import MailIcon from '@mui/icons-material/Mail'
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import { contactInfo } from '../data/contactInfo'
 
 export default function Contact() {
@@ -13,7 +10,9 @@ export default function Contact() {
         className={styles.grid}
         sx={{ 
           bgcolor: "background.paper", 
-          borderRadius: "20px"
+          borderRadius: "20px", 
+          overflow: "hidden",
+          padding: 0
         }}
       >
         {contactInfo.map((info) => (
@@ -25,7 +24,15 @@ export default function Contact() {
               <ListItemIcon>
                 {info.icon}
               </ListItemIcon>
-              <ListItemText primary={info.primary} secondary={info.secondary} />
+              <ListItemText primary={info.primary} secondary={
+                <Typography 
+                  variant="body2" 
+                  color="text.secondary" 
+                  noWrap
+                >
+                  {info.secondary}
+                </Typography>
+              } />
             </ListItemButton>
           </ListItem>
         ))}
