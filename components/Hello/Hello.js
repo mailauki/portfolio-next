@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { Button, IconButton } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail'
-import { contactInfo } from '../data/contactInfo'
+import { contactInfo } from '../../data/contactInfo'
 
 export default function Hello() {
   const shortContactInfo = contactInfo.filter(info => ["email", "linkedin", "github"].includes(info.id))

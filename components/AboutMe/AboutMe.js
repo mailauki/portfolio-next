@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { Typography, Box } from '@mui/material'
 import StarIcon from '@mui/icons-material/Star'
 import Skills from './Skills'

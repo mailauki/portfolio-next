@@ -1,6 +1,6 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider, Typography, Box } from '@mui/material'
-import { skills } from '../data/skills'
+import { skills } from '../../data/skills'
 
 export default function Skills() {
   const labels = Object.keys(skills)

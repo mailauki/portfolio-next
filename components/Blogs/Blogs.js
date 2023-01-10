@@ -1,6 +1,6 @@
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import blogs from '../data/blogs'
+import styles from '../../styles/Home.module.css'
+import blogs from '../../data/blogs'
 // import { Typography } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 

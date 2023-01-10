@@ -1,6 +1,6 @@
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
-import { contactInfo } from '../data/contactInfo'
+import { contactInfo } from '../../data/contactInfo'
 
 export default function Contact() {
   return (
