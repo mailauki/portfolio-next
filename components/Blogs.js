@@ -12,18 +12,19 @@ export default function Blogs() {
       <h1>Blogs</h1>
 
       <div className={styles.grid}>
-        {blogs.map((data) => (
+        {blogs.map((blog) => (
           <a
-            key={data.id}
-            href={`/api/projects/${data.id}`}
+            key={blog.id}
+            href={blog.link}
             className={styles.card}
+            target="_blank"
             rel="noopener noreferrer"
           >
             <h3 className={inter.className}>
-              {data.title} <span><ArrowForwardIcon /></span>
+              {blog.title} <span><ArrowForwardIcon /></span>
             </h3>
             <p className={inter.className}>
-              {data.description[0]}
+              {blog.description}
             </p>
           </a>
         ))}
