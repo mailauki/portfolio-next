@@ -1,19 +1,12 @@
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../../styles/Home.module.css'
 import projects from '../../data/projects'
-// import useSWR from 'swr'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// const fetcher = (url) => fetch(url).then((res) => res.json())
-
 export default function Projects() {
-  // const { data, error } = useSWR('/api/staticdata', fetcher)
-
-  // if (error) return <div>Failed to load</div>
-
-  // if (!data) return <div>Loading...</div>
 
   return (
     <div className={styles.section} id="projects">
@@ -21,9 +14,10 @@ export default function Projects() {
 
       <div className={styles.grid}>
         {projects.map((data) => (
-          <a
+          <Link
             key={data.id}
             href={`/api/projects/${data.id}`}
+            as={`/projects/${data.id}`}
             className={styles.card}
             rel="noopener noreferrer"
           >
@@ -33,7 +27,7 @@ export default function Projects() {
             <p className={inter.className}>
               {data.description[0]}
             </p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
