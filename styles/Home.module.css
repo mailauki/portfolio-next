@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: inherit;
   align-items: inherit;
+  padding-top: 80px;
 }
 
 .section h1 {
@@ -46,10 +47,10 @@
   backdrop-filter: blur(20px);
 }
 
-.header .buttons {
+/* .header .buttons {
   flex-grow: 1;
   flex-wrap: wrap;
-}
+} */
 
 .header .logo {
   display: inherit;
@@ -193,6 +194,10 @@
 @media (max-width: 700px) {
   .main {
     padding: 2rem;
+  }
+
+  .header h5 {
+    display: none;
   }
 
   .grid {
