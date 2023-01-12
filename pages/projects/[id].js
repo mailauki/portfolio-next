@@ -23,6 +23,8 @@ export default function Project() {
       <Image 
         src={data.image} 
         alt={data.id} 
+        width={512}
+        height={331.5}
         priority 
       />
       <h3 className={inter.className}>
