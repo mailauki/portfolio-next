@@ -14,15 +14,9 @@ export default function Project() {
   const { query } = useRouter()
   const { data, error } = useSWR(`/api/projects/${query.id}`, fetcher)
 
-  if (error) return <div>Failed to Load</div>
+  if (error) return <div className={styles.section}>Failed to Load</div>
 
-  if (!data) return <div><CircularProgress /></div>
-
-  // console.log(data)
-
-  // const { id, title, description, image, tags, links } = await data
-
-  // console.log(description)
+  if (!data) return <div className={styles.section}><CircularProgress /></div>
 
   return (
     <>

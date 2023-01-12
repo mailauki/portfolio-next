@@ -10,51 +10,26 @@
 .section {
   width: var(--max-width);
   max-width: 100%;
+  min-height: calc(100vh - 80px);
   display: inherit;
   flex-direction: column;
-  justify-content: inherit;
+  justify-content: flex-start;
   align-items: inherit;
   padding-top: 80px;
 }
 
-.section h1 {
-  margin: 1rem;
-}
-
 .section ul {
-  /* width: var(--max-width);
-  max-width: 100%; */
   background: rgb(var(--callout-rgb));
 }
 
-/* .section button, .section p {
-  margin: 0.5rem;
-} */
-
 .header {
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: flex-end; */
-  /* align-items: center; */
-  /* max-width: var(--max-width); */
-  /* width: 100%; */
-  /* z-index: 2; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* margin: 0; */
-  /* padding: 1rem; */
   background-color: rgba(var(--callout-rgb), 0.5);
   backdrop-filter: blur(20px);
 }
 
-/* .header .buttons {
-  flex-grow: 1;
-  flex-wrap: wrap;
-} */
-
 .header .logo {
   display: inherit;
-  align-items: inherit;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -172,6 +147,14 @@
   transform: translateZ(0);
 }
 
+.center div {
+  display: flex;
+}
+
+.center span {
+  margin: auto 4px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -216,12 +199,21 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 4rem 0;
   }
 
   .center::before {
     transform: none;
     height: 300px;
+  }
+
+  .center div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center span {
+    display: none;
   }
 
   .description {

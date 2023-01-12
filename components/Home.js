@@ -14,11 +14,7 @@ export default function Home() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if(entry.isIntersecting) {
-          // entry.target.classList.add("show")
           setTab(entry.target.id)
-        // } else {
-          // entry.target.classList.remove("show")
-          // setValue(value.filter((v) => v !== entry.target.id))
         }
       })
     })
