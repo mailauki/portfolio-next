@@ -1,14 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Typography, Box, AppBar, Toolbar, Tabs, Tab } from '@mui/material'
 
-export default function Header() {
+export default function Header({ tab }) {
   const [value, setValue] = useState(null)
 
   function handleChange(event, newValue) {
     setValue(newValue)
   }
+
+  useEffect(() => {
+    setValue(tab)
+  }, [tab])
 
   return (
     <AppBar 
@@ -41,51 +45,32 @@ export default function Header() {
           variant="scrollable"
           scrollButtons="auto"
           allowScrollButtonsMobile
-          // sx={{ minHeight: "64px" }}
         >
-          <Tab label="About Me" component="a" href="#aboutme" />
-          <Tab label="Projects" component="a" href="#projects" />
-          <Tab label="Blogs" component="a" href="#blogs" />
-          <Tab label="Contact" component="a" href="#contact" />
-        </Tabs>
-
-        {/* <Box className={styles.buttons}>
-          <Button 
-            component="a" 
-            href="#hello" 
-            rel="noopener noreferrer"
-          >
-            Hello
-          </Button>
-          <Button 
+          <Tab 
+            label="About Me" 
             component="a" 
             href="#aboutme" 
-            rel="noopener noreferrer"
-          >
-            About Me
-          </Button>
-          <Button 
+            value="aboutme" 
+          />
+          <Tab 
+            label="Projects" 
             component="a" 
             href="#projects" 
-            rel="noopener noreferrer"
-          >
-            Projects
-          </Button>
-          <Button 
+            value="projects" 
+          />
+          <Tab 
+            label="Blogs" 
             component="a" 
             href="#blogs" 
-            rel="noopener noreferrer"
-          >
-            Blogs
-          </Button>
-          <Button 
+            value="blogs" 
+          />
+          <Tab 
+            label="Contact" 
             component="a" 
             href="#contact" 
-            rel="noopener noreferrer"
-          >
-            Contact
-          </Button>
-        </Box> */}
+            value="contact" 
+          />
+        </Tabs>
       </Toolbar>
     </AppBar>
   )

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useMemo } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
@@ -13,14 +13,14 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Index() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
   
-  const theme = React.useMemo(
+  const theme = useMemo(
     () =>
       createTheme({
         palette: {
           mode: prefersDarkMode ? 'dark' : 'light',
         },
       }),
-    [prefersDarkMode],
+    [prefersDarkMode]
   )
 
   return (
