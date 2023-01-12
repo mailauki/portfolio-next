@@ -19,7 +19,7 @@ export default function Project() {
   if (!data) return <div className={styles.section}><CircularProgress /></div>
 
   return (
-    <>
+    <div className={styles.main}>
       <AppBar 
         color="transparent" 
         className={styles.header} 
@@ -31,7 +31,7 @@ export default function Project() {
         </Toolbar>
       </AppBar>
 
-      <div className={styles.section}>
+      <div>
         <Image 
           src={data.image} 
           alt={data.id} 
@@ -45,7 +45,7 @@ export default function Project() {
         <p className={inter.className}>
           {data.description[0]}
         </p>
-        <ul>
+        <ul style={{ backgroundColor: "transparent", marginLeft: "1rem" }}>
           {data.description.length > 1 ? (
             data.description[1].map((bullet) => (
               <li key={bullet}>{bullet}</li>
@@ -55,7 +55,7 @@ export default function Project() {
           )}
         </ul>
         <div>
-          {data.tags.map((tag) => <p key={tag}>{tag}</p>)}
+          {data.tags.map((tag) => <Chip key={tag} label={tag} />)}
         </div>
         <div>
           <Button 
@@ -76,6 +76,6 @@ export default function Project() {
           </Button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
