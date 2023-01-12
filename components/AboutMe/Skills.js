@@ -1,5 +1,5 @@
 import styles from '../../styles/Home.module.css'
-import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider, Typography, Box } from '@mui/material'
+import { List, ListItem, ListItemAvatar, Avatar, ListItemText, ListItemButton, Divider, Typography, Box } from '@mui/material'
 import { skills } from '../../data/skills'
 
 export default function Skills() {
@@ -19,11 +19,11 @@ export default function Skills() {
         {labels.map((label) => (
           <>
             <ListItem sx={{ gridColumn: "1 / -1", textAlign: "center" }}>
-              <ListItemText primary={
-                <Typography variant="h5">
-                  {label.charAt(0).toUpperCase() + label.slice(1)}
-                </Typography>
-              } />
+                <ListItemText primary={
+                  <Typography variant="h5">
+                    {label.charAt(0).toUpperCase() + label.slice(1)}
+                  </Typography>
+                } />
             </ListItem>
 
             {skills[label].map((skill) => (

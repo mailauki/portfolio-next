@@ -6,6 +6,7 @@ export default function Contact() {
   return (
     <div className={styles.section} id="contact">
       <h2>Contact Info</h2>
+
       <List 
         className={styles.grid}
         sx={{ 
