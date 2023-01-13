@@ -8,14 +8,9 @@ import OpenIcon from '@mui/icons-material/OpenInNew'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Project({ data }) {
-  const { id, title, description, image, links, tags } = data
-  const { githubLink, demoLink } = links
-
   return (
     <div 
       className={styles.page}
-      // className={styles.section} 
-      // style={{ alignItems: "flex-start" }}
     >
       <div 
         style={{ 
@@ -27,26 +22,24 @@ export default function Project({ data }) {
         }}
       >
         <Image 
-          src={image} 
-          alt={id} 
-          // width={512}
-          // height={331.5}
+          src={data.image} 
+          alt={data.id} 
           fill
           style={{ objectFit: "cover", objectPosition: "top" }}
         />
       </div>
 
       <h3 className={inter.className}>
-        {title}
+        {data.title}
       </h3>
       
       <p className={inter.className}>
-        {description[0]}
+        {data.description[0]}
       </p>
 
       <ul style={{ backgroundColor: "transparent", marginLeft: "1.5rem" }}>
-        {description.length > 1 ? (
-          description[1].map((bullet) => (
+        {data.description.length > 1 ? (
+          data.description[1].map((bullet) => (
             <li key={bullet}>{bullet}</li>
           ))
         ) : (
@@ -55,20 +48,20 @@ export default function Project({ data }) {
       </ul>
 
       <div>
-        {tags.map((tag) => (
+        {data.tags.map((tag) => (
           <Chip key={tag} label={tag} sx={{ margin: 0.5 }} />
         ))}
       </div>
 
       <div>
-        {!githubLink ? (
+        {!data.links.githubLink ? (
           <></>
         ) : (
           <Button 
             variant="outlined"
             startIcon={<GitHubIcon />} 
             component="a"
-            href={githubLink} 
+            href={data.links.githubLink} 
             target="_blank" 
             rel="noopener noreferrer"
             sx={{ margin: 0.5, borderRadius: "50px" }}
@@ -77,14 +70,14 @@ export default function Project({ data }) {
           </Button>
         )}
         
-        {!demoLink ? (
+        {!data.links.demoLink ? (
           <></>
         ) : (
           <Button
             variant="outlined"
             startIcon={<OpenIcon />} 
             component="a"
-            href={demoLink} 
+            href={data.links.demoLink} 
             target="_blank" 
             rel="noopener noreferrer"
             sx={{ margin: 0.5, borderRadius: "50px" }}

@@ -17,14 +17,20 @@ export default () => {
   const { data, error } = useSWR(`/api/projects/${query.id}`, fetcher)
 
   if (error) return (
-    <div className={styles.page}>
-      Failed to Load
+    <div 
+      className={styles.main} 
+      style={{ justifyContent: "center", height: "calc(100vh - 8rem)" }}
+    >
+      <h1>Failed to Load</h1>
     </div>
   )
 
   if (!data) return (
-    <div className={styles.page}>
-      <CircularProgress />
+    <div 
+      className={styles.main} 
+      style={{ justifyContent: "center", height: "calc(100vh - 8rem)" }}
+    >
+      <CircularProgress size={60} />
     </div>
   )
 
@@ -37,16 +43,7 @@ export default () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div 
-        className={styles.main}
-        // className={styles.page}
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   minHeight: "100vh",
-        //   padding: "4rem"
-        // }}
-      >
+      <div className={styles.main}>
         <AppBar 
           color="transparent" 
           className={styles.header} 
