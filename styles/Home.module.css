@@ -74,6 +74,17 @@
   font-family: var(--font-mono);
 }
 
+.bullet {
+  display: flex;
+  align-items: center;
+}
+
+.bullet span {
+  font-size: larger;
+  font-weight: 700;
+  margin: 0 0.5rem;
+}
+
 .list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

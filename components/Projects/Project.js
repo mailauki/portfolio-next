@@ -1,24 +1,22 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '../../styles/Home.module.css'
-import { Button, Typography, Box, Chip } from '@mui/material'
+import { Button, Typography, Box, Chip, List, ListItem, ListItemText } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import OpenIcon from '@mui/icons-material/OpenInNew'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Project({ data }) {
   return (
-    <div 
-      className={styles.page}
-    >
+    <div className={styles.page}>
       <div 
         style={{ 
           alignItems: "flex-start", 
           position: "relative", 
           width: "100%",
           height: "50vw",
-          overflow: "hidden"
+          maxHeight: "400px",
+          overflow: "hidden",
+          margin: "1rem auto"
         }}
       >
         <Image 
@@ -29,23 +27,66 @@ export default function Project({ data }) {
         />
       </div>
 
-      <h3 className={inter.className}>
-        {data.title}
-      </h3>
+      <div 
+        style={{ 
+          display: "flex", 
+          justifyContent: "space-between", 
+          alignItems: "center", 
+          flexWrap: "wrap", 
+          width: "100%" 
+        }}
+      >
+        <Typography variant="h3">{data.title}</Typography>
+        <div>
+          {!data.links.githubLink ? (
+            <></>
+          ) : (
+            <Button 
+              variant="outlined"
+              startIcon={<GitHubIcon />} 
+              component="a"
+              href={data.links.githubLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              sx={{ margin: 0.5, borderRadius: "50px" }}
+            >
+              GitHub
+            </Button>
+          )}
+          
+          {!data.links.demoLink ? (
+            <></>
+          ) : (
+            <Button
+              variant="outlined"
+              startIcon={<OpenIcon />} 
+              component="a"
+              href={data.links.demoLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              sx={{ margin: 0.5, borderRadius: "50px" }}
+            >
+              Demo
+            </Button>
+          )}
+        </div>
+      </div>
       
-      <p className={inter.className}>
+      <Typography variant="subtitle1">
         {data.description[0]}
-      </p>
+      </Typography>
 
-      <ul style={{ backgroundColor: "transparent", marginLeft: "1.5rem" }}>
+      <List dense={true}>
         {data.description.length > 1 ? (
           data.description[1].map((bullet) => (
-            <li key={bullet}>{bullet}</li>
+            <ListItem disablePadding>
+              <ListItemText primary={<Typography variant="body2" color="text.secondary"><span>•</span>{bullet}</Typography>} className={styles.bullet} />
+            </ListItem>
           ))
         ) : (
           <></>
         )}
-      </ul>
+      </List>
 
       <div>
         {data.tags.map((tag) => (
@@ -53,39 +94,7 @@ export default function Project({ data }) {
         ))}
       </div>
 
-      <div>
-        {!data.links.githubLink ? (
-          <></>
-        ) : (
-          <Button 
-            variant="outlined"
-            startIcon={<GitHubIcon />} 
-            component="a"
-            href={data.links.githubLink} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            sx={{ margin: 0.5, borderRadius: "50px" }}
-          >
-            GitHub
-          </Button>
-        )}
-        
-        {!data.links.demoLink ? (
-          <></>
-        ) : (
-          <Button
-            variant="outlined"
-            startIcon={<OpenIcon />} 
-            component="a"
-            href={data.links.demoLink} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            sx={{ margin: 0.5, borderRadius: "50px" }}
-          >
-            Demo
-          </Button>
-        )}
-      </div>
+      
     </div>
   )
 }
