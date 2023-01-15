@@ -8,10 +8,10 @@ export default function Contact() {
       <h2>Contact Info</h2>
 
       <List 
-        className={styles.grid}
+        className={styles.list}
         sx={{ 
           bgcolor: "background.paper", 
-          borderRadius: "20px", 
+          borderRadius: "12px", 
           overflow: "hidden",
           padding: 0
         }}

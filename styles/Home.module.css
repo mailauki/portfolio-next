@@ -43,6 +43,14 @@
   cursor: pointer;
 }
 
+.header .logo:hover img {
+  filter: sepia(11%) saturate(2286%) hue-rotate(125deg) brightness(75%);
+}
+
+.header a:hover {
+  color: #33ab9f;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -87,9 +95,10 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(30%, auto));
   width: var(--max-width);
   max-width: 100%;
+  border-radius: var(--border-radius);
 }
 
 .grid {
@@ -208,7 +217,7 @@
     display: none;
   }
 
-  .grid {
+  .grid, .list {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
     max-width: 320px;
@@ -285,7 +294,7 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
+  .grid, .list {
     grid-template-columns: repeat(2, 50%);
   }
 }

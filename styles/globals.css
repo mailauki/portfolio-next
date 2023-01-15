@@ -19,9 +19,9 @@
   );
   --secondary-glow: linear-gradient(
     to bottom right,
-    rgba(32, 178, 170, 0),
-    rgba(32, 178, 170, 0),
-    rgba(32, 178, 170, 0.4)
+    rgba(51, 171, 159, 0),
+    rgba(51, 171, 159, 0),
+    rgba(51, 171, 159, 0.4)
   );
 
   --tile-start-rgb: 239, 245, 249;
@@ -58,9 +58,9 @@
     );
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(32, 178, 170, 0),
-      rgba(32, 178, 170, 0.1),
-      rgba(32, 178, 170, 0.5)
+      rgba(51, 171, 159, 0),
+      rgba(51, 171, 159, 0.1),
+      rgba(51, 171, 159, 0.5)
     );
 
     --tile-start-rgb: 2, 13, 46;

@@ -12,10 +12,19 @@ export default function App({ Component, pageProps }) {
       createTheme({
         palette: {
           mode: prefersDarkMode ? 'dark' : 'light',
+          primary: {
+            // main: "#20b2aa",
+            main: prefersDarkMode ? "#ffc400": "#33ab9f",
+            // main: prefersDarkMode ? "#ffc400": "#20b2aa",
+            // light: "#ffcf33",
+            // dark: "#b28900"
+          }
         },
       }),
     [prefersDarkMode]
   )
+
+  console.log(theme)
 
   return (
     <ThemeProvider theme={theme}>

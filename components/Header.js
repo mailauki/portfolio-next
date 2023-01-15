@@ -45,32 +45,14 @@ export default function Header({ tab }) {
           variant="scrollable"
           scrollButtons="auto"
           allowScrollButtonsMobile
+          // sx={{ fontWeight: 600 }}
         >
-          {/* <Box 
-            className={styles.logo} 
-            sx={{ mr: 2 }}
-            component="a" 
-            href="#" 
-            target="_top"
-            rel="noopener noreferrer"
-            onClick={() => setValue("hello")}
-            value="hello"
-          >
-            <Image 
-              src="/logo.png"
-              alt="logo"
-              width={40} 
-              height={40} 
-              style={{ marginRight: "4px" }}
-            />
-            <Typography variant="h5">Julie Evans</Typography>
-          </Box> */}
-
           <Tab 
             label="About Me" 
             component="a" 
             href="#aboutme" 
             value="aboutme" 
+            sx={{ fontWeight: 500 }}
           />
           <Tab 
             label="Projects" 
