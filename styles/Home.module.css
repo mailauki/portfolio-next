@@ -185,6 +185,47 @@
   margin: auto 4px;
 }
 
+.scroll h6 {
+  text-align: center;
+
+}
+
+.scroll ul {
+  scrollbar-color: #6969dd transparent;
+  scrollbar-width: thin;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row; 
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+}
+
+.scroll li {
+  min-width: fit-content;
+  max-width: 200px;
+  scroll-snap-align: center;
+}
+
+.scroll ul::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.scroll ul::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroll ul::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-color: #8070d4;
+  background-clip: content-box;
+}
+
+.scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
