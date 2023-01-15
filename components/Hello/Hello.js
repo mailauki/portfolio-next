@@ -9,7 +9,7 @@ export default function Hello() {
         <div>
           <Typography variant="h3">Hi, I'm</Typography>
           <span></span>
-          <Typography variant="h3">Julie M. Evans</Typography>
+          <Typography variant="h3">Julie <span>M. </span>Evans</Typography>
         </div>
         <div>
           <Typography variant="subtitle1">

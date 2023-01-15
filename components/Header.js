@@ -30,12 +30,13 @@ export default function Header({ tab }) {
           onClick={() => setValue(null)}
         >
           <Image 
-            src="/logo.png"
+            src="/logo-100.png"
             alt="logo"
             width={40} 
             height={40} 
             style={{ marginRight: "4px" }}
           />
+          
           <Typography variant="h5">Julie Evans</Typography>
         </Box>
 
@@ -45,7 +46,6 @@ export default function Header({ tab }) {
           variant="scrollable"
           scrollButtons="auto"
           allowScrollButtonsMobile
-          // sx={{ fontWeight: 600 }}
         >
           <Tab 
             label="About Me" 

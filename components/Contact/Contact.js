@@ -1,5 +1,5 @@
 import styles from '../../styles/Home.module.css'
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, Avatar, Badge, Box } from '@mui/material'
 import { contactInfo } from '../../data/contactInfo'
 
 export default function Contact() {
@@ -10,8 +10,6 @@ export default function Contact() {
       <List 
         className={styles.list}
         sx={{ 
-          bgcolor: "background.paper", 
-          borderRadius: "12px", 
           overflow: "hidden",
           padding: 0
         }}
@@ -43,6 +41,42 @@ export default function Contact() {
           </ListItem>
         ))}
       </List>
+
+      <Box 
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: 4
+        }}
+      >
+        <Badge 
+          overlap="circular"
+          badgeContent={
+            <Typography 
+              className={styles.wave} 
+              sx={{ fontSize: "5rem" }}
+            >
+              👋
+            </Typography>
+          }
+          anchorOrigin={{ 
+            vertical: "bottom", horizontal: "left" 
+          }}
+          sx={{ margin: 2 }}
+        >
+          <Avatar 
+            src="/photo.jfif"
+            sx={{ 
+              width: 184,
+              height: 184
+            }} 
+          />
+        </Badge>
+
+        <Typography variant="subtitle1">New to Tech, but excited for more.</Typography>
+      </Box>
     </div>
   )
 }
