@@ -28,6 +28,10 @@
   padding-top: 80px;
 }
 
+.section h3 {
+  margin: 0.5rem auto;
+}
+
 .section ul {
   background: rgb(var(--callout-rgb));
 }

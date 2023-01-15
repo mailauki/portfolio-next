@@ -37,6 +37,7 @@ export default function Project({ data }) {
         }}
       >
         <Typography variant="h3">{data.title}</Typography>
+        
         <div>
           {!data.links.githubLink ? (
             <></>

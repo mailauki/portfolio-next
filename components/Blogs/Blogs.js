@@ -1,7 +1,7 @@
 import { Inter } from '@next/font/google'
 import styles from '../../styles/Home.module.css'
 import blogs from '../../data/blogs'
-// import { Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Blogs() {
   return (
     <div className={styles.section} id="blogs">
-      <h1>Blogs</h1>
+      <Typography variant="h3">Blogs</Typography>
 
       <div className={styles.grid}>
         {blogs.map((blog) => (

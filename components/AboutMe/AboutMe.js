@@ -6,7 +6,7 @@ import Skills from './Skills'
 export default function AboutMe() {
   return (
     <div className={styles.section} id="aboutme">
-      <h1>About Me</h1>
+      <Typography variant="h3">About Me</Typography>
 
       <Box>
         <Typography variant="body1" align="justify" paragraph>

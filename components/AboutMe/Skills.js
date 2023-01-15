@@ -1,5 +1,5 @@
 import styles from '../../styles/Home.module.css'
-import { List, ListItem, ListItemAvatar, Avatar, ListItemText, ListItemButton, Divider, Typography, Box, Chip } from '@mui/material'
+import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Divider, Typography, Box } from '@mui/material'
 import { skills } from '../../data/skills'
 
 export default function Skills() {
@@ -7,7 +7,6 @@ export default function Skills() {
 
   return (
     <>
-      {/* <h2>Skills</h2> */}
       <Typography variant="h4">Skills</Typography>
       <Divider width="100%" sx={{ margin: "0.5rem 0" }} />
 

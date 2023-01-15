@@ -5,7 +5,7 @@ import { contactInfo } from '../../data/contactInfo'
 export default function Contact() {
   return (
     <div className={styles.section} id="contact">
-      <h2>Contact Info</h2>
+      <Typography variant="h3">Contact Info</Typography>
 
       <List 
         className={styles.list}
