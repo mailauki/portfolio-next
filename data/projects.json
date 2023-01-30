@@ -1,44 +1,64 @@
 [
-  { 
-    "id": "cat-tube",
-    "title": "CatTube", 
+  {
+    "id": "nearby-markets",
+    "title": "Nearby Markets",
     "description": [
-      "This is a website for posting and commenting on cat-related videos.", 
-      [
-        "Limited content to only pertain to cats through ActiveRecord Validations.", 
-        "Provided stored user information in the database and interaction to content through Auth.", 
-        "Utilized a Self-Join database table to allow for user-to-user interaction."
-      ]
-    ], 
-    "image": "/projects/cat-tube.jpg", 
+      "WIP: colab."
+    ],
+    "image": "/projects/nearby-markets.jpg",
     "links": {
-      "githubLink": "https://github.com/mailauki/phase-4-project-cattube"
+      "githubLink": "https://github.com/chingu-voyages/v42-geckos-team-20",
+      "demoLink": ""
     },
-    "tags": ["React", "Ruby", "Rails", "PostgreSQL", "Heroku"] 
+    "tags": ["React", "Material UI"]
+  },
+  {
+    "id": "poke-tracker-next",
+    "title": "PokeTracker 2",
+    "description": [
+      "WIP: PokeTracker revamp using NextJS."
+    ],
+    "image": "/projects/poke-tracker-next.jpg",
+    "links": {
+      "githubLink": "https://github.com/mailauki/poke-tracker-next",
+      "demoLink": "https://poketracker.netlify.app"
+    }, 
+    "tags": ["Next JS", "Supabase", "Netlify", "Material UI"]
+  },
+  {
+    "id": "tic-tic-toe",
+    "title": "Tic-Tac-Toe",
+    "description": [
+      "A website for playing tic-tac-toe, either against the computer or a friend.", 
+      [
+        "Created Front-End only game based off of previous project using Ruby.", 
+        "Used Javascript functions and React hooks to provide game functionality and a “computer” opponent.", 
+        "Provided color options of the tokens to the user that are unlockable based on the number of wins tally."
+      ]
+    ],
+    "image": "/projects/tic-tac-toe.jpg",
+    "links": {
+      "githubLink": "https://github.com/mailauki/tic-tac-toe", 
+      "demoLink": "https://mailauki-tic-tac-toe.netlify.app"
+    },
+    "tags": ["React", "Netlify", "Chakra UI"]
   },
   { 
-    "id": "pic-worthy",
-    "title": "PicWorthy", 
-    "description": [
-      "This is a website for posting, liking, and commenting on photos.", 
-      [
-        "Structured using mobile-first design with phone screen-size layout in mind and later upscaling.", 
-        "Added Redux usage to help maximize database functionality.", 
-        "Included external components and tools such as Material UI and Swiper JS through React plugins."
-      ]
-    ], 
-    "image": "/projects/pic-worthy.jpg", 
+    "id": "poke-tracker",
+    "title": "PokeTracker", 
+    "description": ["A website for viewing viewing pokemon, pokedexes, and tracking your collection."], 
+    "image": "/projects/poke-tracker.jpg",   
     "links": {
-      "githubLink": "https://github.com/mailauki/pic-worthy", 
-      "demoLink": "https://pic-worthy.onrender.com"
+      "githubLink": "https://github.com/mailauki/poke-tracker", 
+      "demoLink": "https://poke-tracker.netlify.app"
     },
-    "tags": ["React", "Redux", "Ruby", "Rails", "PostgreSQL", "Render", "Material UI", "Swiper JS"] 
+    "tags": ["React", "TypeScript", "Redux", "Netlify", "Material UI"]
   },
   { 
     "id": "le-banque-du-porcine",
     "title": "Le Banque du Porcine", 
     "description": [
-      "This is a website for viewing balances and wish-list items, with progress bars calculated based on both.", 
+      "A website for viewing balances and wish-list items, with progress bars calculated based on both.", 
       [
         "Created minimalistic Next JS Application using Supabase for the database API.", 
         "Utilized nested routes to personalize data shown limited to the logged-in user.", 
@@ -53,32 +73,38 @@
     "tags": ["Next JS", "Redux", "Netlify", "Supabase", "Material UI", "Swiper JS"] 
   },
   { 
-    "id": "poke-tracker",
-    "title": "PokeTracker", 
-    "description": ["This is a website for viewing viewing pokemon, pokedexes, and tracking your collection."], 
-    "image": "/projects/poke-tracker.jpg",   
-    "links": {
-      "githubLink": "https://github.com/mailauki/poke-tracker", 
-      "demoLink": "https://poke-tracker.netlify.app"
-    },
-    "tags": ["React", "TypeScript", "Redux", "Netlify", "Material UI"]
-  },
-  {
-    "id": "tic-tic-toe",
-    "title": "Tic-Tac-Toe",
+    "id": "pic-worthy",
+    "title": "PicWorthy", 
     "description": [
-      "This is a website for playing tic-tac-toe, either against the computer or a friend.", 
+      "A website for posting, liking, and commenting on photos.", 
       [
-        "Created Front-End only game based off of previous project using Ruby.", 
-        "Used Javascript functions and React hooks to provide game functionality and a “computer” opponent.", 
-        "Provided color options of the tokens to the user that are unlockable based on the number of wins tally."
+        "Structured using mobile-first design with phone screen-size layout in mind and later upscaling.", 
+        "Added Redux usage to help maximize database functionality.", 
+        "Included external components and tools such as Material UI and Swiper JS through React plugins."
       ]
-    ],
-    "image": "/projects/tic-tac-toe.jpg",
+    ], 
+    "image": "/projects/pic-worthy.jpg", 
     "links": {
-      "githubLink": "https://github.com/mailauki/tic-tac-toe", 
-      "demoLink": "https://mailauki-tic-tac-toe.netlify.app"
+      "githubLink": "https://github.com/mailauki/pic-worthy", 
+      "demoLink": "https://pic-worthy.onrender.com"
     },
-    "tags": ["React", "Netlify", "Chakra UI"]
+    "tags": ["React", "Redux", "Ruby", "Rails", "PostgreSQL", "Render", "Material UI", "Swiper JS"] 
+  },
+  { 
+    "id": "cat-tube",
+    "title": "CatTube", 
+    "description": [
+      "A website for posting and commenting on cat-related videos.", 
+      [
+        "Limited content to only pertain to cats through ActiveRecord Validations.", 
+        "Provided stored user information in the database and interaction to content through Auth.", 
+        "Utilized a Self-Join database table to allow for user-to-user interaction."
+      ]
+    ], 
+    "image": "/projects/cat-tube.jpg", 
+    "links": {
+      "githubLink": "https://github.com/mailauki/phase-4-project-cattube"
+    },
+    "tags": ["React", "Ruby", "Rails", "PostgreSQL", "Heroku"] 
   }
 ]

@@ -4,14 +4,14 @@ import styles from '../styles/Home.module.css'
 import { Typography, Box, AppBar, Toolbar, Tabs, Tab } from '@mui/material'
 
 export default function Header({ tab }) {
-  const [value, setValue] = useState(null)
+  const [value, setValue] = useState("hello")
 
   function handleChange(event, newValue) {
     setValue(newValue)
   }
 
   useEffect(() => {
-    tab === "hello" ? setValue(null) : setValue(tab)
+    tab === "hello" ? setValue("hello") : setValue(tab)
   }, [tab])
 
   return (
@@ -27,17 +27,26 @@ export default function Header({ tab }) {
           href="#" 
           target="_top"
           rel="noopener noreferrer"
-          onClick={() => setValue(null)}
+          onClick={() => setValue("hello")}
         >
           <Image 
-            src="/logo-100.png"
+            src="/logo.png"
             alt="logo"
-            width={40} 
-            height={40} 
-            style={{ marginRight: "4px" }}
+            width={60} 
+            height={60} 
+            style={{
+              position: "absolute",
+              top: "4px",
+              left: "20px"
+            }}
           />
           
-          <Typography variant="h5">Julie Evans</Typography>
+          <Typography 
+            variant="h5" 
+            sx={{ ml: "60px" }}
+          >
+            Julie Evans
+          </Typography>
         </Box>
 
         <Tabs
@@ -52,7 +61,6 @@ export default function Header({ tab }) {
             component="a" 
             href="#aboutme" 
             value="aboutme" 
-            sx={{ fontWeight: 500 }}
           />
           <Tab 
             label="Projects" 

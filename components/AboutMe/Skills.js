@@ -12,7 +12,7 @@ export default function Skills() {
 
       <Box className={styles.scroll} sx={{ width: "100%" }}>
         {labels.map((label) => (
-          <Box sx={{ margin: "1rem 0" }}>
+          <Box sx={{ margin: "1rem 0" }} key={label}>
             <Typography variant="h6">
               {label.charAt(0).toUpperCase() + label.slice(1)}
             </Typography>

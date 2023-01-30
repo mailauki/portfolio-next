@@ -8,7 +8,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Projects() {
-
   return (
     <div className={styles.section} id="projects">
       <Typography variant="h3">Projects</Typography>

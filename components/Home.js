@@ -8,7 +8,7 @@ import Contact from './Contact/Contact'
 import Header from './Header'
 
 export default function Home() {
-  const [tab, setTab] = useState(null)
+  const [tab, setTab] = useState("hello")
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {

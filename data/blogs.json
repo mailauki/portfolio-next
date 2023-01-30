@@ -1,11 +1,11 @@
 [
   { 
-    "id": "current-targer-vs-target",
-    "title": "currentTarget vs. target", 
-    "description": "My personal take on the similarities and differences between event.currentTarget and event.target.", 
-    "link": "https://dev.to/mailauki/currenttarget-vs-target-3427/", 
-    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--V25osVcI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/snce09ss0z0i0zw8nmdn.png", 
-    "tags": ["JavaScript", "Beginners", "Functional", "CodeNewbie"] 
+    "id": "fetching-in-tandem",
+    "title": "Fetching in Tandem", 
+    "description": "Fetching data reliant on another fetch's data within a single handler function.", 
+    "link": "https://dev.to/mailauki/fetching-in-tandem-20o9/", 
+    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bB_87I6T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/135awjsekr3dyk1eg9f3.jpeg",
+    "tags": ["React", "Database", "Tutorial"] 
   },
   { 
     "id": "creating-a-follow-button",
@@ -16,11 +16,11 @@
     "tags": ["Tutorial", "Rails", "React", "Database"] 
   },
   { 
-    "id": "fetching-in-tandem",
-    "title": "Fetching in Tandem", 
-    "description": "Fetching data reliant on another fetch's data within a single handler function.", 
-    "link": "https://dev.to/mailauki/fetching-in-tandem-20o9/", 
-    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bB_87I6T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/135awjsekr3dyk1eg9f3.jpeg",
-    "tags": ["React", "Database", "Tutorial"] 
+    "id": "current-targer-vs-target",
+    "title": "currentTarget vs. target", 
+    "description": "My personal take on the similarities and differences between event.currentTarget and event.target.", 
+    "link": "https://dev.to/mailauki/currenttarget-vs-target-3427/", 
+    "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--V25osVcI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/snce09ss0z0i0zw8nmdn.png", 
+    "tags": ["JavaScript", "Beginners", "Functional", "CodeNewbie"] 
   }
 ]
