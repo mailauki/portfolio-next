@@ -46,7 +46,9 @@
   { 
     "id": "poke-tracker",
     "title": "PokeTracker", 
-    "description": ["A website for viewing viewing pokemon, pokedexes, and tracking your collection."], 
+    "description": [
+      "A website for viewing viewing pokemon, pokedexes, and tracking your collection."
+    ], 
     "image": "/projects/poke-tracker.jpg",   
     "links": {
       "githubLink": "https://github.com/mailauki/poke-tracker", 
