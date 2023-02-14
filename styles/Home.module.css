@@ -253,6 +253,10 @@
     display: none;
   }
 
+  .header > div > div {
+    margin-left: 60px;
+  }
+
   .section, .grid, .list {
     max-width: 335px;
   }

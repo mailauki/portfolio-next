@@ -22,7 +22,7 @@ export default function Header({ tab }) {
       <Toolbar variant="dense">
         <Box 
           className={styles.logo} 
-          sx={{ mr: 2 }}
+          sx={{ mr: 2, flexGrow: 1 }}
           component="a" 
           href="#" 
           target="_top"
@@ -43,6 +43,7 @@ export default function Header({ tab }) {
           
           <Typography 
             variant="h5" 
+            noWrap
             sx={{ ml: "60px" }}
           >
             Julie Evans
