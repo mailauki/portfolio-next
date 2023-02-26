@@ -3,12 +3,16 @@
     "id": "nearby-markets",
     "title": "Nearby Markets",
     "description": [
-      "WIP: colab."
+      "An e-commerce app which connects buyers with sellers locally.",
+      [
+        "Worked as part of a team of 5 engineers to build an ecommerce web application, using React."
+        "Used a combination of Figma and GitHub to plan, organize, and coordinate the process with my team."
+      ]
     ],
     "image": "/projects/nearby-markets.jpg",
     "links": {
       "githubLink": "https://github.com/chingu-voyages/v42-geckos-team-20",
-      "demoLink": ""
+      "demoLink": "https://v42-geckos-20.vercel.app"
     },
     "tags": ["React", "Material UI"]
   },
