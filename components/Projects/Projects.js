@@ -2,48 +2,48 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '../../styles/Home.module.css'
-// import projects from '../../data/projects'
-import { supabase } from '../../data/supabaseClient'
+import projects from '../../data/projects'
+// import { supabase } from '../../data/supabaseClient'
 import { Typography } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Projects() {
-  const [projects, setProjects] = useState([])
+//   const [projects, setProjects] = useState([])
 
-  async function getProjects() {
-    let { data, error, status } = await supabase
-      .from('projects')
-      .select(`
-        id,
-        title,
-        description,
-        image,
-        links (github, demo),
-        project_tags (
-          tags (name)
-        )
-      `)
+//   async function getProjects() {
+//     let { data, error, status } = await supabase
+//       .from('projects')
+//       .select(`
+//         id,
+//         title,
+//         description,
+//         image,
+//         links (github, demo),
+//         project_tags (
+//           tags (name)
+//         )
+//       `)
 
-    const projects = data.reverse().map((project) => (
-      Object.assign({
-        id: project.id, 
-        title: project.title, 
-        description: project.description, 
-        image: project.image, 
-        tags: project.project_tags.map((tag) => (
-          tag.tags.name
-        ))
-      })
-    ))
+//     const projects = data.reverse().map((project) => (
+//       Object.assign({
+//         id: project.id, 
+//         title: project.title, 
+//         description: project.description, 
+//         image: project.image, 
+//         tags: project.project_tags.map((tag) => (
+//           tag.tags.name
+//         ))
+//       })
+//     ))
 
-    setProjects(projects)
-  }
+//     setProjects(projects)
+//   }
 
-  useEffect(() => {
-    getProjects()
-  }, [supabase])
+//   useEffect(() => {
+//     getProjects()
+//   }, [supabase])
 
   return (
     <div className={styles.section} id="projects">
