@@ -1,5 +1,16 @@
 [
   {
+    "id": "ecommerce",
+    "title": "eCommerce",
+    "description": ["WIP: An e-commerce web application."],
+    "image": "/projects/ecommerce.jpg",
+    "links": {
+      "githubLink": "https://github.com/mailauki/ecommerce",
+      "demoLink": "https://ecommerce-o7ym.onrender.com"
+    },
+    "tags": ["React", "Ruby", "Material UI", "Render"]
+  },
+  {
     "id": "nearby-markets",
     "title": "Nearby Markets",
     "description": [
