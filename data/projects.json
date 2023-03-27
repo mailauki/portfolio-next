@@ -8,7 +8,7 @@
       "githubLink": "https://github.com/mailauki/ecommerce",
       "demoLink": "https://ecommerce-o7ym.onrender.com"
     },
-    "tags": ["React", "Ruby", "Material UI", "Render"]
+    "tags": ["React", "Ruby", "Rails", "PostgreSQL", "Material UI", "Render"]
   },
   {
     "id": "nearby-markets",
@@ -62,7 +62,12 @@
     "id": "poke-tracker",
     "title": "PokeTracker", 
     "description": [
-      "A website for viewing viewing pokemon, pokedexes, and tracking your collection."
+      "A website for viewing viewing pokemon, pokedexes, and tracking your collection.", 
+      [
+        "Made a web application to show pokemon and allow the user to track their collection.",
+        "Applied an external API to display data of pokemon and filters to sort them.",
+        "Provided a database to store the information that allows the user to track specific pokemon."
+      ]
     ], 
     "image": "/projects/poke-tracker.jpg",   
     "links": {
